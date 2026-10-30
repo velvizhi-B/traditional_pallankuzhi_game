@@ -1,0 +1,29 @@
+.board {
+  width: 800px;
+  margin: auto;
+  padding: 30px;
+  background: #6b3e26;
+  border-radius: 25px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0;
+}
+
+.sideLabel {
+  color: #f6e7d5;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.moveStatus {
+  min-height: 22px;
+  color: #f6e7d5;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+}

@@ -1,0 +1,67 @@
+.pit {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  background: #d2a679;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.pit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(40, 20, 10, 0.25);
+}
+
+.seedLayout {
+  width: 66px;
+  height: 66px;
+  display: grid;
+  grid-template-columns: repeat(5, 10px);
+  grid-auto-rows: 10px;
+  align-content: center;
+  justify-content: center;
+  gap: 3px;
+}
+
+.seedCount {
+  position: absolute;
+  right: 9px;
+  bottom: 7px;
+  min-width: 16px;
+  height: 16px;
+  padding: 0 3px;
+  border-radius: 9px;
+  background: #f6e7d5;
+  color: #3b2f2f;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .pit {
+    width: 64px;
+    height: 64px;
+    padding: 6px;
+  }
+
+  .seedLayout {
+    width: 48px;
+    height: 48px;
+    grid-template-columns: repeat(4, 8px);
+    grid-auto-rows: 8px;
+    gap: 2px;
+  }
+
+  .seedCount {
+    right: 5px;
+    bottom: 4px;
+  }
+}
